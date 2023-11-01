@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+ï»¿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.ARFoundation;
@@ -17,7 +17,7 @@ public class Placeonplane : MonoBehaviour
     [SerializeField]
     [Tooltip("Instantiates this prefab on a plane at the touch location.")]
     GameObject m_PlacedPrefab;
-
+ 
     UnityEvent placementUpdate;
 
     [SerializeField]
@@ -80,7 +80,7 @@ public class Placeonplane : MonoBehaviour
         }
         else
         {
-            // Sabit konumu belirlediðiniz noktada olacak þekilde güncelleyin
+            // Sabit konumu belirlediÃ°iniz noktada olacak Ã¾ekilde gÃ¼ncelleyin
             spawnedObject.transform.position = fixedPosition;
         }
     }
@@ -88,6 +88,7 @@ public class Placeonplane : MonoBehaviour
     public void DiableVisual()
     {
         visualObject.SetActive(false);
+        
     }
 
     static List<ARRaycastHit> s_Hits = new List<ARRaycastHit>();

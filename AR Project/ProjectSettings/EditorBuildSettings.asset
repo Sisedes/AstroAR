@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ExampleAssets/Scenes/0_AR.unity
     guid: 54d97c082fab1384eb493f7884d9a122
+  - enabled: 0
+    path: Assets/ExampleAssets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/BaktginiAlgilama/BaktiginiAlgilamaDeneme.unity
     guid: aaec68232d28c004a9e205305e6c0df2
