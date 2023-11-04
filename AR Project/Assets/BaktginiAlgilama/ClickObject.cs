@@ -13,6 +13,8 @@ public class ClickObject : MonoBehaviour
     const float speed = 6f;
 
     public Transform[] allSectionInfos;
+
+    private bool isInfoOpen = false;
     private void Start()
     {
         foreach (var hehe in allSectionInfos)
@@ -44,11 +46,21 @@ public class ClickObject : MonoBehaviour
 
                 if (cube == GetClickedObject(out RaycastHit hit))
                 {
-                    OpenInfo();
+                    if (!isInfoOpen)
+                    {
+                        OpenInfo();
+                        isInfoOpen = true;
+                    }
+                    else
+                    {
+                        isInfoOpen = false;
+                    }
+
                 }
             }
             else if (touch.phase == TouchPhase.Ended)
             {
+                if(!isInfoOpen)
                 CloseInfo();
             }
         }
