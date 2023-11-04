@@ -169,7 +169,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 1000
-  field of view: 60
+  field of view: 123.00945
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -332,7 +332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aRPlaneManager: {fileID: 388525032}
-  model3DPrefab: {fileID: 2552116974769945917, guid: 86c3f8be28fdfc140ac575e13f535df7,
+  model3DPrefab: {fileID: 4134874549544659574, guid: fc440066abb2b8e48b281331fcc50edc,
     type: 3}
 --- !u!114 &388525034
 MonoBehaviour:
