@@ -2,15 +2,26 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
+[RequireComponent(typeof(ARRaycastManager))]
 public class PlaneManager : MonoBehaviour
 {
     [SerializeField] private ARPlaneManager aRPlaneManager;
     [SerializeField] private GameObject model3DPrefab;
     private List<ARPlane> planes = new List<ARPlane>();
     private GameObject model3DPlaced;
+    ARRaycastManager m_RaycastManager;
+
+    Vector3 fixedPosition;
+    void Awake()
+    {
+        m_RaycastManager = GetComponent<ARRaycastManager>();
+
+       
+    }
 
     private void OnEnable()
     {
@@ -30,13 +41,28 @@ public class PlaneManager : MonoBehaviour
         }
         foreach(var plane in planes)
         {
-            if(plane.extents.x * plane.extents.y >= 0.4 && model3DPlaced == null)
+            if (model3DPlaced == null )
             {
-                model3DPlaced = Instantiate(model3DPrefab);
-                float yOffset = model3DPlaced.transform.localScale.y / 2;
-                model3DPlaced.transform.position = new Vector3(plane.center.x, plane.center.y + yOffset, plane.center.z);
-                model3DPlaced.transform.forward = plane.normal;
-                StopPlaneDetection();
+                if (TryGetTouchPosition(out Vector2 touchPosition))
+                {
+                    List<ARRaycastHit> hits = new List<ARRaycastHit>();
+                    if (m_RaycastManager.Raycast(touchPosition, hits, TrackableType.PlaneWithinPolygon))
+                    {
+                        // Dokunulan yere raycast baþarýlý oldu
+                        ARRaycastHit hit = hits[0];
+                        Pose hitPose = hit.pose;
+                        Vector3 newPosition = hitPose.position + new Vector3(0f, 1f, 0f);
+                        model3DPlaced = Instantiate(model3DPrefab, newPosition, hitPose.rotation);
+                        fixedPosition = newPosition;
+                        // model3DPlaced'ý da güncelleyebilirsiniz
+                        StopPlaneDetection();
+                    }
+                }
+            }
+            else
+            {
+                // Sabit konumu belirlediðiniz noktada olacak þekilde güncelleyin
+                model3DPlaced.transform.position = fixedPosition;
             }
 
         }
@@ -50,5 +76,17 @@ public class PlaneManager : MonoBehaviour
             plane.gameObject.SetActive(false);
         }
     }
-    
+
+    bool TryGetTouchPosition(out Vector2 touchPosition)
+    {
+        if (Input.touchCount > 0)
+        {
+            touchPosition = Input.GetTouch(0).position;
+            return true;
+        }
+
+        touchPosition = default;
+        return false;
+    }
+
 }

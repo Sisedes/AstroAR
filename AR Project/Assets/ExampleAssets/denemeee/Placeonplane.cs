@@ -23,7 +23,7 @@ public class Placeonplane : MonoBehaviour
     [SerializeField]
     GameObject visualObject;
 
-    
+    ARPlaneManager planeManager;
     Vector3 fixedPosition;
 
    
@@ -44,6 +44,8 @@ public class Placeonplane : MonoBehaviour
 
     void Awake()
     {
+        planeManager.planePrefab.SetActive(true);
+        planeManager = FindObjectOfType<ARPlaneManager>();
         m_RaycastManager = GetComponent<ARRaycastManager>();
 
         if (placementUpdate == null)
@@ -76,6 +78,7 @@ public class Placeonplane : MonoBehaviour
                 var hitPose = s_Hits[0].pose;
                 fixedPosition= hitPose.position;
                 spawnedObject = Instantiate(m_PlacedPrefab, hitPose.position, hitPose.rotation);
+              
             }
         }
         else
