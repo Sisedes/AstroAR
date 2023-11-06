@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/BaktginiAlgilama/BaktiginiAlgilamaDeneme.unity
     guid: aaec68232d28c004a9e205305e6c0df2
+  - enabled: 1
+    path: Assets/ExampleAssets/Scenes/Quiz2.unity
+    guid: 7a252275fe969ba488eaec62337c354b
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}
