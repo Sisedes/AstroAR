@@ -362,7 +362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728ad7fae8e460a4ba41265c7308d757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AnchorPrefab: {fileID: 5850685996383403602, guid: 5036cebe923376d4894dabe1751b0df0,
+  m_AnchorPrefab: {fileID: 6531455936744063391, guid: 3b1ccd4e79971a542b348f27261b92a9,
     type: 3}
 --- !u!114 &388525035
 MonoBehaviour:
@@ -390,7 +390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ab0e80cee9cc1d44928bfe488dd1e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PointCloudPrefab: {fileID: 5838479089142608639, guid: 80f66042d10388f45a68072516b32425,
+  m_PointCloudPrefab: {fileID: 6531455936744063391, guid: 3b1ccd4e79971a542b348f27261b92a9,
     type: 3}
 --- !u!114 &388525037
 MonoBehaviour:
