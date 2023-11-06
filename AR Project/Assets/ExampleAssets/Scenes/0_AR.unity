@@ -348,7 +348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aRPlaneManager: {fileID: 388525032}
-  model3DPrefab: {fileID: 2552116974769945917, guid: 86c3f8be28fdfc140ac575e13f535df7,
+  model3DPrefab: {fileID: 6531455936744063391, guid: 3b1ccd4e79971a542b348f27261b92a9,
     type: 3}
 --- !u!114 &388525034
 MonoBehaviour:
@@ -390,7 +390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ab0e80cee9cc1d44928bfe488dd1e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PointCloudPrefab: {fileID: 6531455936744063391, guid: 3b1ccd4e79971a542b348f27261b92a9,
+  m_PointCloudPrefab: {fileID: 5838479089142608639, guid: 80f66042d10388f45a68072516b32425,
     type: 3}
 --- !u!114 &388525037
 MonoBehaviour:
