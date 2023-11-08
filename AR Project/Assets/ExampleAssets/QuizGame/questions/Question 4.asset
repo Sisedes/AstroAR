@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea54763f1393a94ab24d30f1898a89a, type: 3}
   m_Name: Question 4
   m_EditorClassIdentifier: 
-  questionText: jghmgkmgmgmk
+  questionText: "  G\xFCne\u015F sistemindeki y\xF6r\xFCngesinde yan yatm\u0131\u015F
+    gibi d\xF6nen gezegen a\u015Fa\u011F\u0131dakilerden hangisidir?"
   answers:
-  - 5
-  - 6
-  - 7
-  - 5
-  correctAnswerIndex: 0
+  - "Merk\xFCr"
+  - "Uran\xFCs"
+  - "Sat\xFCrn"
+  - "J\xFCpiter"
+  correctAnswerIndex: 1

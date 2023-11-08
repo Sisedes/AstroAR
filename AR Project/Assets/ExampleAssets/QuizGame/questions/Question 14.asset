@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fea54763f1393a94ab24d30f1898a89a, type: 3}
-  m_Name: Question 3
+  m_Name: Question 14
   m_EditorClassIdentifier: 
-  questionText: "  G\xFCne\u015F sisteminde G\xFCne\u015F'e en yak\u0131n ve en uzak
-    olan gezegenler s\u0131ras\u0131 ile hangisidir?"
+  questionText: "  \_Hangi se\xE7enekteki gezegen a\xE7\u0131kta kal\u0131r?  G\xFCne\u015F'e
+    en yak\u0131n ve en k\xFC\xE7\xFCk gezegen ................ d\u0131r. K\u0131z\u0131l
+    gezegen olarak bilinen gezegen....................d\u0131r. Karasal gezegenlerin
+    en b\xFCy\xFC\u011F\xFC.................d\u0131r."
   answers:
-  - "Merk\xFCr - Pl\xFCton"
-  - "Ven\xFCs - J\xFCpiter"
-  - "Merk\xFCr - Uran\xFCs"
-  - " Merk\xFCr -\_\_Nept\xFCn"
+  - "D\xFCnya"
+  - "Merk\xFCr"
+  - Mars
+  - "J\xFCpiter"
   correctAnswerIndex: 3

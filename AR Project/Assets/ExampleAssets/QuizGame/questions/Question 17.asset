@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fea54763f1393a94ab24d30f1898a89a, type: 3}
-  m_Name: Question 3
+  m_Name: Question 17
   m_EditorClassIdentifier: 
-  questionText: "  G\xFCne\u015F sisteminde G\xFCne\u015F'e en yak\u0131n ve en uzak
-    olan gezegenler s\u0131ras\u0131 ile hangisidir?"
+  questionText: "  G\xFCne\u015F sistemi i\xE7erisinde bulunan gezegenlerden en k\xFC\xE7\xFCk
+    olan gezegen a\u015Fa\u011F\u0131dakilerden hangisidir?"
   answers:
-  - "Merk\xFCr - Pl\xFCton"
-  - "Ven\xFCs - J\xFCpiter"
-  - "Merk\xFCr - Uran\xFCs"
-  - " Merk\xFCr -\_\_Nept\xFCn"
-  correctAnswerIndex: 3
+  - "Nept\xFCn"
+  - "Merk\xFCr"
+  - "J\xFCpiter"
+  - Mars
+  correctAnswerIndex: 1

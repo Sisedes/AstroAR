@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fea54763f1393a94ab24d30f1898a89a, type: 3}
-  m_Name: Question 2
+  m_Name: Question 24
   m_EditorClassIdentifier: 
-  questionText: "  A\u015Fa\u011F\u0131dakilerden hangisi gezegenlerin \xF6zelliklerinden
-    biri\_de\u011Fildir?"
+  questionText: "  Hangi gezegenin bir uydusu vard\u0131r?"
   answers:
-  - "Gezegenler kendi ekseni etraf\u0131nda d\xF6nerler."
-  - "Gezegenler \u0131s\u0131 ve \u0131\u015F\u0131k kayna\u011F\u0131d\u0131r."
-  - "Gezegenlerin konumlar\u0131 zamanla de\u011Fi\u015Fmektedir."
-  - "Gezegenlerin elips \u015Feklinde y\xF6r\xFCngeleri vard\u0131r"
+  - "Ven\xFCs"
+  - Mars
+  - "D\xFCnya"
+  - "Sat\xFCrn"
   correctAnswerIndex: 2
