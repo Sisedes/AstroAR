@@ -6,6 +6,8 @@ TagManager:
   tags:
   - hasInfo
   - plane
+  - Planet
+  - sectionInfo
   layers:
   - Default
   - TransparentFX

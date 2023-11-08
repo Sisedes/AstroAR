@@ -8,6 +8,7 @@ public class ClickObject : MonoBehaviour
     public GameObject cube;
 
     [Header("MessageBox")]
+    [SerializeField] GameObject[] allSectionGO;
     [SerializeField] Transform SectionInfo;
     Vector3 desiredScale = Vector3.zero;
     const float speed = 6f;
@@ -25,6 +26,20 @@ public class ClickObject : MonoBehaviour
     
     void Update()
     {
+        if (cube == null)
+        {
+            cube = GameObject.FindGameObjectWithTag("Planet");
+        }
+        if (SectionInfo == null)
+        {
+            SectionInfo = GameObject.FindGameObjectWithTag("sectionInfo").transform;
+            allSectionGO = GameObject.FindGameObjectsWithTag("sectionInfo");
+            for(int i=0; i < allSectionGO.Length; i++)
+            {
+                allSectionInfos[i] = allSectionGO[i].transform;
+            }
+        }
+
         //MessageBox shits
         SectionInfo.localScale = Vector3.Lerp(SectionInfo.localScale, desiredScale, Time.deltaTime * speed);
 

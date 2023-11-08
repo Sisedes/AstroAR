@@ -511,7 +511,7 @@ GameObject:
   - component: {fileID: 8790302111037539427}
   m_Layer: 0
   m_Name: SectionInfo
-  m_TagString: Untagged
+  m_TagString: sectionInfo
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

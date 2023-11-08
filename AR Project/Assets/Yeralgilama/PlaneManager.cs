@@ -51,8 +51,12 @@ public class PlaneManager : MonoBehaviour
                         // Dokunulan yere raycast baþarýlý oldu
                         ARRaycastHit hit = hits[0];
                         Pose hitPose = hit.pose;
-                        Vector3 newPosition = hitPose.position + new Vector3(0f, 1f, 0f);
+                        Vector3 newPosition = hitPose.position + new Vector3(10f, 1f, 10f);
                         model3DPlaced = Instantiate(model3DPrefab, newPosition, hitPose.rotation);
+
+                        float scaleFactor = 1.5f; // Örneðin modeli orijinal boyutunun 1.5 katý yapar
+                        model3DPlaced.transform.localScale = new Vector3(scaleFactor, scaleFactor, scaleFactor);
+
                         fixedPosition = newPosition;
                         // model3DPlaced'ý da güncelleyebilirsiniz
                         StopPlaneDetection();
