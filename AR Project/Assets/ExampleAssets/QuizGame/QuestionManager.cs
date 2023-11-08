@@ -14,12 +14,23 @@ public class QuestionManager : MonoBehaviour
     public TextMeshProUGUI[] buttonTexts;
 
     int currentQuestion = 0;
+    public int currentLevel;
 
     void Start()
     {
+        if (PlayerPrefs.HasKey("currentLevel"))
+        {
+            currentLevel = PlayerPrefs.GetInt("currentLevel");
+        }
+        else
+        {
+            // Kayýtlý bir deðer yoksa varsayýlan deðeri kullanabilirsiniz.
+            currentLevel= 0;
+        }
         SetQuestion();
         
     }
+   
 
     // Update is called once per frame
     void Update()
@@ -29,19 +40,23 @@ public class QuestionManager : MonoBehaviour
     void SetQuestion()
     {
         int questionIndex = currentQuestion%questions.Length;
-        questionText.text = questions[questionIndex].questionText;
+        questionText.text = questions[currentLevel].questionText;
         for(int i = 0; i < buttonTexts.Length; i++)
         {
-            buttonTexts[i].text = questions[questionIndex].answers[i];
+            buttonTexts[i].text = questions[currentLevel].answers[i];
         }
-        correctanswerIndex = questions[questionIndex].correctAnswerIndex;
-        currentQuestion++;
+        correctanswerIndex = questions[currentLevel].correctAnswerIndex;
+        currentLevel++;
+       
     }
 
     public void AnswerButton(int answerIndex)
     {
         if(answerIndex== correctanswerIndex) {
-        correctPanel.gameObject.SetActive(true);}
+        correctPanel.gameObject.SetActive(true);
+            PlayerPrefs.SetInt("currentLevel", currentLevel);
+            PlayerPrefs.Save();
+        }
         else
         {
             wrongpanel.gameObject.SetActive(true);
