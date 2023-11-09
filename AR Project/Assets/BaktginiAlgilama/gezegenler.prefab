@@ -126,14 +126,14 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 2
   m_RegexValue: 
   m_GlobalPointSize: 14
   m_CharacterLimit: 0
@@ -188,6 +188,8 @@ GameObject:
   - component: {fileID: 8529856943277965537}
   - component: {fileID: 8254763715672441357}
   - component: {fileID: 6267401144096138900}
+  - component: {fileID: 5992518290500323477}
+  - component: {fileID: 6542886700912499561}
   m_Layer: 5
   m_Name: Button (8)
   m_TagString: Untagged
@@ -309,6 +311,44 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!223 &5992518290500323477
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97406495050483759}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &6542886700912499561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97406495050483759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &117695049076148699
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,7 +561,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "X  \xDCzerindeki K\xFCtlen"
+  m_text: "Ay \xDCzerindeki K\xFCtlen"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1789,7 +1829,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "X  \xDCzerindeki K\xFCtlen"
+  m_text: "Sat\xFCrn  \xDCzerindeki K\xFCtlen"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1869,6 +1909,7 @@ GameObject:
   - component: {fileID: 3527129083582859723}
   - component: {fileID: 6378236564504060479}
   - component: {fileID: 1725052714836075753}
+  - component: {fileID: 2204165301529415411}
   m_Layer: 5
   m_Name: ceres
   m_TagString: Untagged
@@ -1934,6 +1975,21 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &2204165301529415411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644843547264566534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db580343183affd439602aed0333790f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kiloInput: {fileID: 3102014155390312033}
+  kiloOutput: {fileID: 3664331561825912218}
+  "katsay\u0131": 0.029
 --- !u!1 &771131865248569646
 GameObject:
   m_ObjectHideFlags: 0
@@ -2292,7 +2348,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "X  \xDCzerindeki K\xFCtlen"
+  m_text: "J\xFCpiter \xDCzerindeki K\xFCtlen"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2428,7 +2484,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "X  \xDCzerindeki K\xFCtlen"
+  m_text: "Pl\xFCton \xDCzerindeki K\xFCtlen"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2623,14 +2679,14 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 2
   m_RegexValue: 
   m_GlobalPointSize: 14
   m_CharacterLimit: 0
@@ -4254,7 +4310,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "X  \xDCzerindeki K\xFCtlen"
+  m_text: "Merk\xFCr  \xDCzerindeki K\xFCtlen"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4334,6 +4390,7 @@ GameObject:
   - component: {fileID: 6688078816566759444}
   - component: {fileID: 5813664913532448320}
   - component: {fileID: 1471457286117396082}
+  - component: {fileID: 5378675059090411931}
   m_Layer: 5
   m_Name: moon
   m_TagString: Untagged
@@ -4399,6 +4456,21 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &5378675059090411931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2336100524482098551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db580343183affd439602aed0333790f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kiloInput: {fileID: 5155663341879931875}
+  kiloOutput: {fileID: 3927934594646463718}
+  "katsay\u0131": 1.622
 --- !u!1 &2376931545677396282
 GameObject:
   m_ObjectHideFlags: 0
@@ -4842,7 +4914,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "X  \xDCzerindeki K\xFCtlen"
+  m_text: "Ceres \xDCzerindeki K\xFCtlen"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5037,14 +5109,14 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 2
   m_RegexValue: 
   m_GlobalPointSize: 14
   m_CharacterLimit: 0
@@ -5460,6 +5532,8 @@ GameObject:
   - component: {fileID: 8617667408393784175}
   - component: {fileID: 5195997714873211373}
   - component: {fileID: 6285839799915314885}
+  - component: {fileID: 6215069715475910043}
+  - component: {fileID: 6414552162442908142}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -5581,6 +5655,44 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!223 &6215069715475910043
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2630194719691497677}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &6414552162442908142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2630194719691497677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &2630828128016039547
 GameObject:
   m_ObjectHideFlags: 0
@@ -5593,6 +5705,8 @@ GameObject:
   - component: {fileID: 8481333372166104239}
   - component: {fileID: 10269517024853404}
   - component: {fileID: 3090075792624954208}
+  - component: {fileID: 4127904362958655585}
+  - component: {fileID: 7082287038093534601}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -5714,6 +5828,44 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!223 &4127904362958655585
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2630828128016039547}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &7082287038093534601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2630828128016039547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &2639817557860822911
 GameObject:
   m_ObjectHideFlags: 0
@@ -6367,14 +6519,14 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 2
   m_RegexValue: 
   m_GlobalPointSize: 14
   m_CharacterLimit: 0
@@ -6628,6 +6780,8 @@ GameObject:
   - component: {fileID: 3522052356278396819}
   - component: {fileID: 4979723372490135529}
   - component: {fileID: 4509570509420494722}
+  - component: {fileID: 8335689951423526424}
+  - component: {fileID: 152528194938711980}
   m_Layer: 5
   m_Name: Button (9)
   m_TagString: Untagged
@@ -6749,6 +6903,44 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!223 &8335689951423526424
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2967629504913947401}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &152528194938711980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2967629504913947401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &3094335379343449962
 GameObject:
   m_ObjectHideFlags: 0
@@ -6761,6 +6953,8 @@ GameObject:
   - component: {fileID: 1878520349441871785}
   - component: {fileID: 6452644428422397620}
   - component: {fileID: 2216426403306794596}
+  - component: {fileID: 3529344834319687753}
+  - component: {fileID: 2918061870556786468}
   m_Layer: 5
   m_Name: Button (5)
   m_TagString: Untagged
@@ -6882,6 +7076,44 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!223 &3529344834319687753
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3094335379343449962}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &2918061870556786468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3094335379343449962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &3096206561216837042
 GameObject:
   m_ObjectHideFlags: 0
@@ -7186,6 +7418,7 @@ GameObject:
   - component: {fileID: 3169243161406336094}
   - component: {fileID: 5609887831046622751}
   - component: {fileID: 8581374524384423689}
+  - component: {fileID: 3606739344249254656}
   m_Layer: 5
   m_Name: jupiter
   m_TagString: Untagged
@@ -7251,6 +7484,21 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &3606739344249254656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3195710894087968496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db580343183affd439602aed0333790f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kiloInput: {fileID: 5270686647774572377}
+  kiloOutput: {fileID: 3435317825249666859}
+  "katsay\u0131": 24.79
 --- !u!1 &3245318962405416878
 GameObject:
   m_ObjectHideFlags: 0
@@ -7318,7 +7566,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "X  \xDCzerindeki K\xFCtlen"
+  m_text: "G\xFCne\u015F \xDCzerindeki K\xFCtlen"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9088,14 +9336,14 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 2
   m_RegexValue: 
   m_GlobalPointSize: 14
   m_CharacterLimit: 0
@@ -9229,6 +9477,8 @@ GameObject:
   - component: {fileID: 2043546762701627545}
   - component: {fileID: 3440447640233772071}
   - component: {fileID: 8485305476654842966}
+  - component: {fileID: 8028983460739281800}
+  - component: {fileID: 9017560598035247421}
   m_Layer: 5
   m_Name: Button (4)
   m_TagString: Untagged
@@ -9350,6 +9600,44 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!223 &8028983460739281800
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4130754980531145669}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &9017560598035247421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4130754980531145669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &4156255716344466081
 GameObject:
   m_ObjectHideFlags: 0
@@ -9687,7 +9975,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "X  \xDCzerindeki K\xFCtlen"
+  m_text: "Ven\xFCs \xDCzerindeki K\xFCtlen"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9767,6 +10055,7 @@ GameObject:
   - component: {fileID: 8174253696793768382}
   - component: {fileID: 8716830455288533720}
   - component: {fileID: 8143372125190013778}
+  - component: {fileID: 8974566085790018481}
   m_Layer: 5
   m_Name: venus
   m_TagString: Untagged
@@ -9832,6 +10121,21 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &8974566085790018481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4272720606910100449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db580343183affd439602aed0333790f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kiloInput: {fileID: 6281023250543765353}
+  kiloOutput: {fileID: 8545226835195250834}
+  "katsay\u0131": 8.87
 --- !u!1 &4299462465053870644
 GameObject:
   m_ObjectHideFlags: 0
@@ -9958,14 +10262,14 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 2
   m_RegexValue: 
   m_GlobalPointSize: 14
   m_CharacterLimit: 0
@@ -10723,6 +11027,8 @@ GameObject:
   - component: {fileID: 7147685473894472082}
   - component: {fileID: 392126671659167856}
   - component: {fileID: 3862993511271824521}
+  - component: {fileID: 5524798901844671599}
+  - component: {fileID: 3604917423667876975}
   m_Layer: 5
   m_Name: Button (10)
   m_TagString: Untagged
@@ -10844,6 +11150,44 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!223 &5524798901844671599
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4728639373998624570}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &3604917423667876975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4728639373998624570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &4986513562396475616
 GameObject:
   m_ObjectHideFlags: 0
@@ -11001,6 +11345,7 @@ GameObject:
   - component: {fileID: 7419380366210320787}
   - component: {fileID: 7235626337318898186}
   - component: {fileID: 721967631885010110}
+  - component: {fileID: 4145153687532219792}
   m_Layer: 5
   m_Name: saturn
   m_TagString: Untagged
@@ -11066,6 +11411,21 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &4145153687532219792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5021950504337252948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db580343183affd439602aed0333790f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kiloInput: {fileID: 2897960380126707296}
+  kiloOutput: {fileID: 5281380102041524868}
+  "katsay\u0131": 10.44
 --- !u!1 &5055129016606490570
 GameObject:
   m_ObjectHideFlags: 0
@@ -11327,14 +11687,14 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 2
   m_RegexValue: 
   m_GlobalPointSize: 14
   m_CharacterLimit: 0
@@ -11798,6 +12158,7 @@ GameObject:
   - component: {fileID: 5019274604779223867}
   - component: {fileID: 6059455027516814898}
   - component: {fileID: 4244800026528818087}
+  - component: {fileID: 3184180759854151718}
   m_Layer: 5
   m_Name: sun
   m_TagString: Untagged
@@ -11863,6 +12224,21 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &3184180759854151718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5376970899162851908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db580343183affd439602aed0333790f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kiloInput: {fileID: 8120884246900854620}
+  kiloOutput: {fileID: 2400635921186578590}
+  "katsay\u0131": 274
 --- !u!1 &5422239826980035251
 GameObject:
   m_ObjectHideFlags: 0
@@ -12145,6 +12521,8 @@ GameObject:
   - component: {fileID: 577975852602735713}
   - component: {fileID: 3552163993306856999}
   - component: {fileID: 5716546669698301399}
+  - component: {fileID: 1676679010207717931}
+  - component: {fileID: 1179804022331194121}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -12266,6 +12644,44 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!223 &1676679010207717931
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5493739398849645885}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &1179804022331194121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5493739398849645885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &5527783885969042768
 GameObject:
   m_ObjectHideFlags: 0
@@ -12683,14 +13099,14 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 2
   m_RegexValue: 
   m_GlobalPointSize: 14
   m_CharacterLimit: 0
@@ -12744,6 +13160,7 @@ GameObject:
   - component: {fileID: 5467352601319699121}
   - component: {fileID: 1286412553580209812}
   - component: {fileID: 7938187864473898691}
+  - component: {fileID: 1435038317591676977}
   m_Layer: 5
   m_Name: neptune
   m_TagString: Untagged
@@ -12809,6 +13226,21 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &1435038317591676977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782559863212346541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db580343183affd439602aed0333790f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kiloInput: {fileID: 6337517225218616284}
+  kiloOutput: {fileID: 805097003651531893}
+  "katsay\u0131": 11.15
 --- !u!1 &5818511872643864613
 GameObject:
   m_ObjectHideFlags: 0
@@ -13090,6 +13522,7 @@ GameObject:
   - component: {fileID: 3513639971111181179}
   - component: {fileID: 751582725233194729}
   - component: {fileID: 836036713266121021}
+  - component: {fileID: 6804020961186129395}
   m_Layer: 5
   m_Name: uranus
   m_TagString: Untagged
@@ -13155,6 +13588,21 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &6804020961186129395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6028770424168206266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db580343183affd439602aed0333790f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kiloInput: {fileID: 1053229889340236043}
+  kiloOutput: {fileID: 507574422539293243}
+  "katsay\u0131": 8.69
 --- !u!1 &6073182259899146435
 GameObject:
   m_ObjectHideFlags: 0
@@ -13281,14 +13729,14 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 2
   m_RegexValue: 
   m_GlobalPointSize: 14
   m_CharacterLimit: 0
@@ -14251,13 +14699,14 @@ GameObject:
   - component: {fileID: 3991976557598674008}
   - component: {fileID: 5743036917789003774}
   - component: {fileID: 2119866117598064953}
+  - component: {fileID: 6276127341684711777}
   m_Layer: 5
   m_Name: mars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3991976557598674008
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14316,6 +14765,21 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &6276127341684711777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6451897617826595781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db580343183affd439602aed0333790f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kiloInput: {fileID: 6025790827457651835}
+  kiloOutput: {fileID: 6481938857419295509}
+  "katsay\u0131": 3.711
 --- !u!1 &6473412394022593964
 GameObject:
   m_ObjectHideFlags: 0
@@ -14960,6 +15424,7 @@ GameObject:
   - component: {fileID: 2620803887227838749}
   - component: {fileID: 8796806979292038074}
   - component: {fileID: 5032184649211284904}
+  - component: {fileID: 3169914330075025235}
   m_Layer: 5
   m_Name: mercury
   m_TagString: Untagged
@@ -15025,6 +15490,21 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &3169914330075025235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7007021915457455155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db580343183affd439602aed0333790f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kiloInput: {fileID: 4841983090934868729}
+  kiloOutput: {fileID: 7197595883567409087}
+  "katsay\u0131": 3.7
 --- !u!1 &7054928191405425396
 GameObject:
   m_ObjectHideFlags: 0
@@ -15569,14 +16049,14 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 2
   m_RegexValue: 
   m_GlobalPointSize: 14
   m_CharacterLimit: 0
@@ -16547,6 +17027,8 @@ GameObject:
   - component: {fileID: 4265036826806446017}
   - component: {fileID: 1362642303029557940}
   - component: {fileID: 4851778619551507126}
+  - component: {fileID: 7906473239983252499}
+  - component: {fileID: 3437419999890861722}
   m_Layer: 5
   m_Name: Button (6)
   m_TagString: Untagged
@@ -16668,6 +17150,44 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!223 &7906473239983252499
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8092211794205049243}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &3437419999890861722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8092211794205049243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &8115991215416080268
 GameObject:
   m_ObjectHideFlags: 0
@@ -16794,14 +17314,14 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 2
   m_RegexValue: 
   m_GlobalPointSize: 14
   m_CharacterLimit: 0
@@ -16941,6 +17461,8 @@ GameObject:
   - component: {fileID: 4471138622735608453}
   - component: {fileID: 802102632980315089}
   - component: {fileID: 829417148675196471}
+  - component: {fileID: 4498295406016412784}
+  - component: {fileID: 3532963052877579534}
   m_Layer: 5
   m_Name: Button (11)
   m_TagString: Untagged
@@ -17062,6 +17584,44 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!223 &4498295406016412784
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8408046941949188366}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &3532963052877579534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8408046941949188366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &8455145502790273030
 GameObject:
   m_ObjectHideFlags: 0
@@ -17288,6 +17848,8 @@ GameObject:
   - component: {fileID: 261226495844713359}
   - component: {fileID: 7830617647212267788}
   - component: {fileID: 170523079508859113}
+  - component: {fileID: 3725302568815124843}
+  - component: {fileID: 7634587482000459463}
   m_Layer: 5
   m_Name: Button (7)
   m_TagString: Untagged
@@ -17409,6 +17971,44 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!223 &3725302568815124843
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8877384302624613586}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &7634587482000459463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8877384302624613586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &8908898912085972736
 GameObject:
   m_ObjectHideFlags: 0
@@ -17476,7 +18076,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "X  \xDCzerindeki K\xFCtlen"
+  m_text: "Nept\xFCn \xDCzerindeki K\xFCtlen"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -17557,6 +18157,8 @@ GameObject:
   - component: {fileID: 3401470098520087690}
   - component: {fileID: 455733920916617219}
   - component: {fileID: 2951022905261549930}
+  - component: {fileID: 7910587152224543834}
+  - component: {fileID: 9027761695116343331}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -17678,6 +18280,44 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!223 &7910587152224543834
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8978213786441793162}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &9027761695116343331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8978213786441793162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &9102920852550178362
 GameObject:
   m_ObjectHideFlags: 0
@@ -17742,6 +18382,7 @@ GameObject:
   - component: {fileID: 8628129289201831333}
   - component: {fileID: 2612082021603933379}
   - component: {fileID: 4678352831664377152}
+  - component: {fileID: 7096079925480844371}
   m_Layer: 5
   m_Name: pluto
   m_TagString: Untagged
@@ -17807,6 +18448,21 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &7096079925480844371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9144192757635593904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db580343183affd439602aed0333790f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kiloInput: {fileID: 7553416804198101872}
+  kiloOutput: {fileID: 5772177785437609596}
+  "katsay\u0131": 0.06
 --- !u!1 &9201263408661930950
 GameObject:
   m_ObjectHideFlags: 0
@@ -17874,7 +18530,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "X  \xDCzerindeki K\xFCtlen"
+  m_text: "Uran\xFCs \xDCzerindeki K\xFCtlen"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
