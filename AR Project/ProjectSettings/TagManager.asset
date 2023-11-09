@@ -8,6 +8,7 @@ TagManager:
   - plane
   - Planet
   - sectionInfo
+  - Arcam
   layers:
   - Default
   - TransparentFX
