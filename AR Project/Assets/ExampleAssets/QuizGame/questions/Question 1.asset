@@ -19,4 +19,5 @@ MonoBehaviour:
   - "Sat\xFCrn"
   - "Uran\xFCs"
   - "Nept\xFCn"
-  correctAnswerIndex: 1
+  correctAnswerIndex: 0
+  bilgiText: "J\xFCpiter 139.820 km \xE7ap\u0131 ile en b\xFCy\xFCk gezegendir. "

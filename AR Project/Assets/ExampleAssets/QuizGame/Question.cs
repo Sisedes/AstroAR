@@ -8,5 +8,6 @@ public class Question : ScriptableObject
     public string questionText;
     public string[] answers;
     public int correctAnswerIndex;
+    public string bilgiText;
    
 }

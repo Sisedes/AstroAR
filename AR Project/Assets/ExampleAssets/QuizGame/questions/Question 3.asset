@@ -20,3 +20,5 @@ MonoBehaviour:
   - "Merk\xFCr - Uran\xFCs"
   - " Merk\xFCr -\_\_Nept\xFCn"
   correctAnswerIndex: 3
+  bilgiText: "G\xFCne\u015F'ten olan uzakl\u0131klar\u0131na g\xF6re gezegenler s\u0131ras\u0131yla
+    Merk\xFCr, Ven\xFCs, D\xFCnya, Mars, J\xFCpiter, Sat\xFCrn, Uran\xFCs ve Nept\xFCn'd\xFCr. "

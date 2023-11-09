@@ -20,3 +20,6 @@ MonoBehaviour:
   - "Ekseni etraf\u0131nda bat\u0131dan do\u011Fuya d\xF6nme"
   - "G\xFCne\u015F etraf\u0131nda dolanma"
   correctAnswerIndex: 3
+  bilgiText: "Gezegen olarak kabul edilme \u015Fartlar\u0131ndan biri de G\xFCne\u015F\u2019in
+    etraf\u0131nda d\xF6nmesidir dolay\u0131syla g\xFCne\u015F sistemindeki t\xFCm
+    gezegenlerin ortak bir \xF6zelli\u011Fidir. "

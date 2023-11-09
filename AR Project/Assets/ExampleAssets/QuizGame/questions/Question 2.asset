@@ -19,4 +19,6 @@ MonoBehaviour:
   - "Gezegenler \u0131s\u0131 ve \u0131\u015F\u0131k kayna\u011F\u0131d\u0131r."
   - "Gezegenlerin konumlar\u0131 zamanla de\u011Fi\u015Fmektedir."
   - "Gezegenlerin elips \u015Feklinde y\xF6r\xFCngeleri vard\u0131r"
-  correctAnswerIndex: 2
+  correctAnswerIndex: 1
+  bilgiText: "Is\u0131 ve \u0131\u015F\u0131k kayna\u011F\u0131 olan g\xFCne\u015Ftir,
+    gezegenler de\u011Fildir. "

@@ -18,4 +18,5 @@ MonoBehaviour:
   - "J\xFCpiter"
   - Mars
   - "Uran\xFCs"
-  correctAnswerIndex: 1
+  correctAnswerIndex: 0
+  bilgiText: "Titan Sat\xFCrn\u2019\xFCn uydusudur. "
