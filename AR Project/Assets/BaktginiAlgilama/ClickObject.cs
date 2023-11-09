@@ -7,22 +7,10 @@ public class ClickObject : MonoBehaviour
 {
     public GameObject cube;
 
-    [Header("MessageBox")]
-    [SerializeField] GameObject[] allSectionGO;
-    [SerializeField] Transform SectionInfo;
-    Vector3 desiredScale = Vector3.zero;
     const float speed = 6f;
-
-    public Transform[] allSectionInfos;
+    public GameObject aa;
 
     private bool isInfoOpen = false;
-    private void Start()
-    {
-        foreach (var hehe in allSectionInfos)
-        {
-            hehe.localScale = Vector3.Lerp(hehe.localScale, Vector3.zero, Time.deltaTime * speed);
-        }
-    }
     
     void Update()
     {
@@ -30,18 +18,7 @@ public class ClickObject : MonoBehaviour
         {
             cube = GameObject.FindGameObjectWithTag("Planet");
         }
-        if (SectionInfo == null)
-        {
-            SectionInfo = GameObject.FindGameObjectWithTag("sectionInfo").transform;
-            allSectionGO = GameObject.FindGameObjectsWithTag("sectionInfo");
-            for(int i=0; i < allSectionGO.Length; i++)
-            {
-                allSectionInfos[i] = allSectionGO[i].transform;
-            }
-        }
 
-        //MessageBox shits
-        SectionInfo.localScale = Vector3.Lerp(SectionInfo.localScale, desiredScale, Time.deltaTime * speed);
 
         if (Input.touchCount > 0)
         {
@@ -55,7 +32,6 @@ public class ClickObject : MonoBehaviour
                 if (Physics.Raycast(ray, out hehe, 100))
                 {
                     cube = hehe.transform.gameObject;
-                    SectionInfo = hehe.transform.GetChild(0);
                     Debug.Log(hehe.transform.gameObject.name);
                 }
 
@@ -122,11 +98,10 @@ public class ClickObject : MonoBehaviour
 
      void OpenInfo()
     {
-        desiredScale = Vector3.one;
+        aa.SetActive(true);
     }
      void CloseInfo()
     {
-        desiredScale = Vector3.zero;
     }
 
 }
