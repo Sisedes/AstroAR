@@ -9,6 +9,7 @@ TagManager:
   - Planet
   - sectionInfo
   - Arcam
+  - nightpanel
   layers:
   - Default
   - TransparentFX
