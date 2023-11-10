@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea54763f1393a94ab24d30f1898a89a, type: 3}
   m_Name: Question 17
   m_EditorClassIdentifier: 
-  questionText: "  G\xFCne\u015F sistemi i\xE7erisinde bulunan gezegenlerden en k\xFC\xE7\xFCk
-    olan gezegen a\u015Fa\u011F\u0131dakilerden hangisidir?"
+  questionText: "    G\xFCne\u015F sistemi i\xE7erisinde bulunan gezegenlerden en
+    k\xFC\xE7\xFCk olan gezegen a\u015Fa\u011F\u0131dakilerden hangisidir?"
   answers:
   - "Nept\xFCn"
   - "Merk\xFCr"

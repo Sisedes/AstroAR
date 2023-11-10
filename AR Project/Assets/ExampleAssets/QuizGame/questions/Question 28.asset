@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea54763f1393a94ab24d30f1898a89a, type: 3}
   m_Name: Question 28
   m_EditorClassIdentifier: 
-  questionText: "  .....\u2019n\u0131n halkas\u0131 vard\u0131r"
+  questionText: "    .....\u2019n\u0131n halkas\u0131 vard\u0131r"
   answers:
   - "D\xFCnya"
   - "Sat\xFCrn"

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea54763f1393a94ab24d30f1898a89a, type: 3}
   m_Name: Question 7
   m_EditorClassIdentifier: 
-  questionText: "  A\u015Fa\u011F\u0131daki gezegenlerden hangisi kendi ekseni etraf\u0131nda
-    saat y\xF6n\xFCnde hareket eder?"
+  questionText: "    A\u015Fa\u011F\u0131daki gezegenlerden hangisi kendi ekseni
+    etraf\u0131nda saat y\xF6n\xFCnde hareket eder?"
   answers:
   - Mars
   - "Ven\xFCs"

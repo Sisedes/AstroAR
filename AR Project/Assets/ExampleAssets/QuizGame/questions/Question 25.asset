@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea54763f1393a94ab24d30f1898a89a, type: 3}
   m_Name: Question 25
   m_EditorClassIdentifier: 
-  questionText: "  G\xFCne\u015F sisteminde en h\u0131zl\u0131 d\xF6nen gezegen ....\u2019dir."
+  questionText: "    G\xFCne\u015F sisteminde en h\u0131zl\u0131 d\xF6nen gezegen
+    ....\u2019dir."
   answers:
   - "Nept\xFCn"
   - "Uran\xFCs"

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea54763f1393a94ab24d30f1898a89a, type: 3}
   m_Name: Question 5
   m_EditorClassIdentifier: 
-  questionText: "  D\xFCnya gezegeni hakk\u0131nda verilen bilgilerden hangisi\_yanl\u0131\u015Ft\u0131r?"
+  questionText: "    D\xFCnya gezegeni hakk\u0131nda verilen bilgilerden hangisi\_yanl\u0131\u015Ft\u0131r?"
   answers:
   - "\xDCzerinde ya\u015Fam\u0131n oldu\u011Fu bilinen tek gezegendir."
   - "Tek uydusu vard\u0131r."

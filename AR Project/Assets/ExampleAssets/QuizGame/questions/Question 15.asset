@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea54763f1393a94ab24d30f1898a89a, type: 3}
   m_Name: Question 15
   m_EditorClassIdentifier: 
-  questionText: "  G\xFCne\u015F sisteminde ka\xE7 tane gezegen bulunur."
+  questionText: "    G\xFCne\u015F sisteminde ka\xE7 tane gezegen bulunur."
   answers:
   - 7
   - 8

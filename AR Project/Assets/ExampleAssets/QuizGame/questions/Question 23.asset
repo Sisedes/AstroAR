@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea54763f1393a94ab24d30f1898a89a, type: 3}
   m_Name: Question 23
   m_EditorClassIdentifier: 
-  questionText: "  D\xFCnya ka\xE7 milyar ya\u015F\u0131ndad\u0131r?"
+  questionText: "    D\xFCnya ka\xE7 milyar ya\u015F\u0131ndad\u0131r?"
   answers:
   - 4.5
   - 450

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea54763f1393a94ab24d30f1898a89a, type: 3}
   m_Name: Question 16
   m_EditorClassIdentifier: 
-  questionText: "  G\xFCne\u015F, gezegenler, gezegenlerin uydular\u0131, asteroitler
+  questionText: "    G\xFCne\u015F, gezegenler, gezegenlerin uydular\u0131, asteroitler
     ve kuyruklu y\u0131ld\u0131zlar\u0131n olu\u015Fturdu\u011Fu sisteme ne ad verilir?"
   answers:
   - Galaksi

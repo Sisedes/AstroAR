@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea54763f1393a94ab24d30f1898a89a, type: 3}
   m_Name: Question 27
   m_EditorClassIdentifier: 
-  questionText: "  B\xFCy\xFCkl\xFC\u011F\xFC di\u011Fer gezegenlerin toplam\u0131ndan
+  questionText: "    B\xFCy\xFCkl\xFC\u011F\xFC di\u011Fer gezegenlerin toplam\u0131ndan
     daha b\xFCy\xFCk olan gezegen hangisidir?"
   answers:
   - "J\xFCpiter"

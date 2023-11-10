@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea54763f1393a94ab24d30f1898a89a, type: 3}
   m_Name: Question 12
   m_EditorClassIdentifier: 
-  questionText: "  A\u015Fa\u011F\u0131da verilen \xF6zelliklerden hangisi b\xFCt\xFCn
+  questionText: "    A\u015Fa\u011F\u0131da verilen \xF6zelliklerden hangisi b\xFCt\xFCn
     gezegenler i\xE7in\_ortakt\u0131r?"
   answers:
   - Uydusu olma

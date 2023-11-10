@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea54763f1393a94ab24d30f1898a89a, type: 3}
   m_Name: Question 8
   m_EditorClassIdentifier: 
-  questionText: "  A\u015Fa\u011F\u0131daki gezegenlerden hangisinde ya\u015Fam 
+  questionText: "    A\u015Fa\u011F\u0131daki gezegenlerden hangisinde ya\u015Fam 
     vard\u0131r?"
   answers:
   - "Sat\xFCrn"
