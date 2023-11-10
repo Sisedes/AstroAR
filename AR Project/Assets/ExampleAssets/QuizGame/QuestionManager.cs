@@ -33,17 +33,22 @@ public class QuestionManager : MonoBehaviour
     public TextMeshProUGUI aciklamaText;
 
     public GameObject panelObject;
+    public GameObject panelBitti;
+
+    public Button testBitir;
 
     void Start()
     {
+       
+        testBitir.interactable = false;
         Color colorRed=Color.red;
      Color colorGreen=Color.green;
      Color colorBlue= buttonRenk.image.color;
 
-       
+        panelBitti.SetActive(false);
 
 
-    nextButton.interactable = false;
+        nextButton.interactable = false;
         panelObject.SetActive(false);
         if (PlayerPrefs.HasKey("currentLevel"))
         {
@@ -149,8 +154,20 @@ public class QuestionManager : MonoBehaviour
                 buttonD.image.color = Color.red;
             }
             wrongpanel.gameObject.SetActive(true);
+          
+            
+        }
+        if (currentLevel != 30)
+        {
             nextButton.interactable = true;
-           
+        }
+        else
+        {
+            testBitir.interactable = true;
+            nextButton.interactable = false;
+            currentLevel = 0;
+            PlayerPrefs.SetInt("currentLevel", currentLevel);
+            PlayerPrefs.Save();
         }
         panelObject.SetActive(true);
     }
@@ -161,7 +178,12 @@ public class QuestionManager : MonoBehaviour
            // correctPanel.gameObject.SetActive(false);
             SetQuestion();
             panelObject.SetActive(false);
+            if (currentLevel==30) {
+                nextButton.interactable = false;
+               // testBitir.gameObject.SetActive(true);
+                
 
+            }
         }
         else
         {
@@ -174,4 +196,13 @@ public class QuestionManager : MonoBehaviour
         wrongpanel.SetActive(false);
 
     }
+    public void QuizBitir()
+    {
+        panelObject.SetActive(false);
+        panelBitti.SetActive(true);
+
+    } 
+   
+
+
 }
