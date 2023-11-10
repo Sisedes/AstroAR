@@ -12,7 +12,12 @@ public class Kilo : MonoBehaviour
 
     private void Update()
     {
-       kiloOutput.text = ((Convert.ToInt32(kiloInput.text)/9.81f) * katsayý).ToString()+" KG";
+        if(!string.IsNullOrEmpty(kiloInput.text))
+        {
+            float x= ((Convert.ToInt32(kiloInput.text) / 9.81f) * katsayý);
+            x = Mathf.Round(x);
+            kiloOutput.text = x.ToString();
+        }
     }
 
 }

@@ -17,4 +17,14 @@ public class MenuManager : MonoBehaviour
     {
         SceneManager.LoadScene(3);
     }
+
+    public void Kapat()
+    {
+        Application.Quit();
+    }
+
+    public void quizKapat()
+    {
+        SceneManager.LoadScene(0);  
+    }
 }

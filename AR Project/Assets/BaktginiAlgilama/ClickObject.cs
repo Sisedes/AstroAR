@@ -9,6 +9,7 @@ public class ClickObject : MonoBehaviour
 
     const float speed = 6f;
     public GameObject aa;
+    public LayerMask targetLayer;
 
     private bool isInfoOpen = false;
     
@@ -29,7 +30,7 @@ public class ClickObject : MonoBehaviour
                 Ray ray = Camera.main.ScreenPointToRay(touch.position);
                 RaycastHit hehe;
 
-                if (Physics.Raycast(ray, out hehe, 100))
+                if (Physics.Raycast(ray, out hehe, 100, targetLayer))
                 {
                     cube = hehe.transform.gameObject;
                     Debug.Log(hehe.transform.gameObject.name);

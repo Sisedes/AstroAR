@@ -13,22 +13,22 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PlanetUI
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Sun
+  - Ceres
+  - Earth
+  - Moon
+  - Jupiter
+  - Mars
+  - Mercury
+  - Neptune
+  - Pluto
+  - Saturn
+  - Uranus
+  - Venus
+  - UranusUI
   - 
   - 
   - 
