@@ -12,9 +12,14 @@ public class ClickObject : MonoBehaviour
     public LayerMask targetLayer;
 
     private bool isInfoOpen = false;
+    public GameObject nightfilter;
     
     void Update()
     {
+        if (nightfilter == null)
+        {
+            nightfilter = GameObject.FindGameObjectWithTag("nightpanel");
+        }
         if (cube == null)
         {
             cube = GameObject.FindGameObjectWithTag("Planet");
@@ -100,6 +105,7 @@ public class ClickObject : MonoBehaviour
      void OpenInfo()
     {
         aa.SetActive(true);
+        nightfilter.SetActive(false);
     }
      void CloseInfo()
     {
