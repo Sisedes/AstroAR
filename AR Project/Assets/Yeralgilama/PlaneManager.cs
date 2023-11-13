@@ -15,13 +15,14 @@ public class PlaneManager : MonoBehaviour
     private GameObject model3DPlaced;
     ARRaycastManager m_RaycastManager;
 
-    Vector3 fixedPosition;
+    public Vector3 fixedPosition;
     void Awake()
     {
         m_RaycastManager = GetComponent<ARRaycastManager>();
 
        
     }
+    
 
     private void OnEnable()
     {
@@ -93,4 +94,8 @@ public class PlaneManager : MonoBehaviour
         return false;
     }
 
+    
 }
+
+
+
