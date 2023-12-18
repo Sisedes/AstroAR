@@ -1,51 +1,56 @@
 using UnityEngine;
+using UnityEngine.XR.ARFoundation;
 
 public class ScaleController : MonoBehaviour
 {
-    public GameObject targetObject;
-    public float scaleFactor = 0.5f; 
-    public float minScale = 1f; 
-    public float maxScale = 10f; 
+    public GameObject arCameraManager;
+    float fov = 60f;
+    float maxFOV = 100f; 
+    float minFOV = 0; 
+    float sensitivity = 10f;
+
+    private bool buyuk = false;
+    private bool kucuk = false;
 
     private void Start()
     {
-        if (targetObject == null)
-        {
-            targetObject = GameObject.FindGameObjectWithTag("gezegenler");
-        }
     }
 
     private void Update()
     {
-        if (targetObject == null)
+        fov = arCameraManager.GetComponent<Camera>().fieldOfView;
+
+        if (buyuk)
         {
-            targetObject = GameObject.FindGameObjectWithTag("gezegenler");
+            fov += sensitivity * Time.deltaTime;
+            fov = Mathf.Clamp(fov, minFOV, maxFOV);
+            arCameraManager.GetComponent<Camera>().fieldOfView = fov;
+        }
+        else if (kucuk)
+        {
+            fov -= sensitivity * Time.deltaTime;
+            fov = Mathf.Clamp(fov, minFOV, maxFOV);
+            arCameraManager.GetComponent<Camera>().fieldOfView = fov;
         }
     }
-    public void IncreaseScale()
+
+    public void ZoomInUp()
     {
-        Vector3 newScale = targetObject.transform.localScale + Vector3.one * scaleFactor;
-
-        newScale = ClampScale(newScale);
-
-        targetObject.transform.localScale = newScale;
+        buyuk = true;
     }
-
-    public void DecreaseScale()
+    public void ZoomInDown()
     {
-        Vector3 newScale = targetObject.transform.localScale - Vector3.one * scaleFactor;
+        buyuk = false;
 
-        newScale = ClampScale(newScale);
-
-        targetObject.transform.localScale = newScale;
     }
-
-    private Vector3 ClampScale(Vector3 scale)
+    public void ZoomOutUp()
     {
-        scale.x = Mathf.Clamp(scale.x, minScale, maxScale);
-        scale.y = Mathf.Clamp(scale.y, minScale, maxScale);
-        scale.z = Mathf.Clamp(scale.z, minScale, maxScale);
+        kucuk = true;
 
-        return scale;
+    }
+    public void ZoomOutDown()
+    {
+        kucuk = false;
+
     }
 }
