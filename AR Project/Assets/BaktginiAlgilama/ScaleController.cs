@@ -1,37 +1,59 @@
+using System;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 
 public class ScaleController : MonoBehaviour
 {
-    public GameObject arCameraManager;
-    float fov = 60f;
-    float maxFOV = 100f; 
-    float minFOV = 0; 
-    float sensitivity = 10f;
-
     private bool buyuk = false;
     private bool kucuk = false;
 
+    public GameObject targetObject;
+    public float scaleFactor = 0.5f; 
+    public float minScale = 1f; 
+    public float maxScale = 10f;
+
+
     private void Start()
     {
+        if (targetObject == null)
+        {
+            targetObject = GameObject.FindGameObjectWithTag("gezegenler");
+        }
     }
 
     private void Update()
     {
-        fov = arCameraManager.GetComponent<Camera>().fieldOfView;
+        if (targetObject == null)
+        {
+            targetObject = GameObject.FindGameObjectWithTag("gezegenler");
+        }
 
         if (buyuk)
         {
-            fov += sensitivity * Time.deltaTime;
-            fov = Mathf.Clamp(fov, minFOV, maxFOV);
-            arCameraManager.GetComponent<Camera>().fieldOfView = fov;
+            Vector3 newScale = targetObject.transform.localScale - Vector3.one * scaleFactor * Time.deltaTime;
+
+            newScale = ClampScale(newScale);
+            targetObject.transform.localScale = newScale;
         }
         else if (kucuk)
         {
-            fov -= sensitivity * Time.deltaTime;
-            fov = Mathf.Clamp(fov, minFOV, maxFOV);
-            arCameraManager.GetComponent<Camera>().fieldOfView = fov;
+            Vector3 newScale = targetObject.transform.localScale + Vector3.one * scaleFactor * Time.deltaTime;
+
+            newScale = ClampScale(newScale);
+            targetObject.transform.localScale = newScale;
         }
+        
+    }
+
+    
+
+    private Vector3 ClampScale(Vector3 scale)
+    {
+        scale.x = Mathf.Clamp(scale.x, minScale, maxScale);
+        scale.y = Mathf.Clamp(scale.y, minScale, maxScale);
+        scale.z = Mathf.Clamp(scale.z, minScale, maxScale);
+
+        return scale;
     }
 
     public void ZoomInUp()
@@ -41,12 +63,10 @@ public class ScaleController : MonoBehaviour
     public void ZoomInDown()
     {
         buyuk = false;
-
     }
     public void ZoomOutUp()
     {
         kucuk = true;
-
     }
     public void ZoomOutDown()
     {
