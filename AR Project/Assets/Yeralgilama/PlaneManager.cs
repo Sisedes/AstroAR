@@ -30,7 +30,7 @@ public class PlaneManager : MonoBehaviour
     }
     private void OnDisable()
     {
-        aRPlaneManager.planesChanged += PlanesFound;
+        aRPlaneManager.planesChanged -= PlanesFound;
     }
 
     private void PlanesFound(ARPlanesChangedEventArgs planeData)
