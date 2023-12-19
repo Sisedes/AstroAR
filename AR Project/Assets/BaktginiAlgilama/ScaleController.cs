@@ -8,16 +8,16 @@ public class ScaleController : MonoBehaviour
     private bool kucuk = false;
 
     public GameObject targetObject;
-    public float scaleFactor = 0.5f; 
+    public float scaleFactor = 10f; 
     public float minScale = 1f; 
-    public float maxScale = 10f;
+    public float maxScale = 1000f;
 
 
     private void Start()
     {
         if (targetObject == null)
         {
-            targetObject = GameObject.FindGameObjectWithTag("gezegenler");
+            targetObject = GameObject.FindGameObjectWithTag("hehe");
         }
     }
 
@@ -25,7 +25,7 @@ public class ScaleController : MonoBehaviour
     {
         if (targetObject == null)
         {
-            targetObject = GameObject.FindGameObjectWithTag("gezegenler");
+            targetObject = GameObject.FindGameObjectWithTag("hehe");
         }
 
         if (buyuk)

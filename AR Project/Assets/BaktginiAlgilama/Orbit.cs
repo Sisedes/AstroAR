@@ -16,7 +16,7 @@ public class Orbit : MonoBehaviour
     {
         if (mainSystem == null)
         {
-            mainSystem = GameObject.FindGameObjectWithTag("gezegenler");
+            mainSystem = GameObject.FindGameObjectWithTag("hehe");
             hehe=mainSystem.transform.localScale.x;
         }
         realOrbitDistance = orbitDistance;
@@ -26,7 +26,7 @@ public class Orbit : MonoBehaviour
     {
         if (mainSystem == null)
         {
-            mainSystem = GameObject.FindGameObjectWithTag("gezegenler");
+            mainSystem = GameObject.FindGameObjectWithTag("hehe");
         }
         else
         {
@@ -40,7 +40,7 @@ public class Orbit : MonoBehaviour
             SelfRotate();
         }
         
-            orbitDistance = realOrbitDistance * hehe;
+            orbitDistance = realOrbitDistance * hehe*10;
     }
 
     void OrbitAround()

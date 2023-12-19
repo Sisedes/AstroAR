@@ -10313,7 +10313,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2665627435039947480}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 627de1a7ecd833c4c8bfaaf353ee5b55, type: 3}
   m_Name: 
@@ -10995,12 +10995,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2554824643370875880}
   - component: {fileID: 2900142060885025109}
-  - component: {fileID: 7394840810917452252}
-  - component: {fileID: 7864587597559064632}
-  - component: {fileID: 7578594171815807666}
+  - component: {fileID: 5314294086884781811}
   m_Layer: 0
   m_Name: MilkwaySystem
-  m_TagString: Untagged
+  m_TagString: hehe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11013,8 +11011,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2900142060885025106}
   m_LocalRotation: {x: -0.18301266, y: 0.6830127, z: -0.18301266, w: 0.6830127}
-  m_LocalPosition: {x: 0, y: 25, z: 200}
-  m_LocalScale: {x: 0.100000046, y: 0.1, z: 0.100000046}
+  m_LocalPosition: {x: 0.00004196167, y: 25.000034, z: 199.99988}
+  m_LocalScale: {x: 0.100000046, y: 0.099999994, z: 0.10000004}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6558769288136177140}
@@ -11052,75 +11050,18 @@ MonoBehaviour:
   orbitDistance: 100
   orbitDegreesPerSec: 0.000000011111111
   selfRotateSpeed: {x: 0, y: 0, z: 0}
---- !u!114 &7394840810917452252
+--- !u!114 &5314294086884781811
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2900142060885025106}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eda371e5375f454490a86f21559ee38, type: 3}
+  m_Script: {fileID: 11500000, guid: 627de1a7ecd833c4c8bfaaf353ee5b55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Use:
-    Filter: 0
-    IgnoreStartedOverGui: 1
-    RequiredFingerCount: 0
-    RequiredMouseButtons: 0
-    RequiredSelectable: {fileID: 0}
-  _camera: {fileID: 0}
-  sensitivity: 1
-  damping: -1
-  inertia: 0
-  remainingTranslation: {x: 0, y: 0, z: 0}
---- !u!114 &7864587597559064632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2900142060885025106}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c73c1ab94e28d244827af556dca1ed2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Use:
-    Filter: 0
-    IgnoreStartedOverGui: 1
-    RequiredFingerCount: 0
-    RequiredMouseButtons: 0
-    RequiredSelectable: {fileID: 0}
-  _camera: {fileID: 0}
-  relative: 0
-  sensitivity: 1
-  damping: -1
-  remainingScale: {x: 0, y: 0, z: 0}
---- !u!114 &7578594171815807666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2900142060885025106}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52d72cc6210cb7144a24acb7402222a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Use:
-    Filter: 0
-    IgnoreStartedOverGui: 1
-    RequiredFingerCount: 0
-    RequiredMouseButtons: 0
-    RequiredSelectable: {fileID: 0}
-  _camera: {fileID: 0}
-  relative: 0
-  damping: -1
-  remainingTranslation: {x: 0, y: 0, z: 0}
-  remainingRotation: {x: 0, y: 0, z: 0, w: 1}
 --- !u!1 &2934785401657343380
 GameObject:
   m_ObjectHideFlags: 0
@@ -21461,7 +21402,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -150, y: 85}
+  m_AnchoredPosition: {x: 150, y: 85}
   m_SizeDelta: {x: 244, y: 144}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &4710422507956688514
@@ -21492,7 +21433,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1f669c42a9c5ad54f9fd1bef91af9297, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3e1f7b9f41e9a60428af2c1a45558925, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21563,7 +21504,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 7900150277275110840}
+        - m_Target: {fileID: 5314294086884781811}
           m_TargetAssemblyTypeName: RevolveCharacter, Assembly-CSharp
           m_MethodName: OnRightButtonDown
           m_Mode: 1
@@ -21579,7 +21520,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 7900150277275110840}
+        - m_Target: {fileID: 5314294086884781811}
           m_TargetAssemblyTypeName: RevolveCharacter, Assembly-CSharp
           m_MethodName: OnRightButtonUp
           m_Mode: 1
@@ -29992,7 +29933,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 150, y: 85}
+  m_AnchoredPosition: {x: -150, y: 85}
   m_SizeDelta: {x: 244, y: 144}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &3429985832408543781
@@ -30023,7 +29964,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3e1f7b9f41e9a60428af2c1a45558925, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1f669c42a9c5ad54f9fd1bef91af9297, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -30094,7 +30035,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 7900150277275110840}
+        - m_Target: {fileID: 5314294086884781811}
           m_TargetAssemblyTypeName: RevolveCharacter, Assembly-CSharp
           m_MethodName: OnLeftButtonDown
           m_Mode: 1
@@ -30110,7 +30051,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 7900150277275110840}
+        - m_Target: {fileID: 5314294086884781811}
           m_TargetAssemblyTypeName: RevolveCharacter, Assembly-CSharp
           m_MethodName: OnLeftButtonUp
           m_Mode: 1
